@@ -1,0 +1,97 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>StudyFlow - Dashboard</title>
+    <link rel="stylesheet" href="styles.css">
+    <script src="https://unpkg.com/lucide@latest"></script>
+</head>
+<body>
+    <div class="container">
+        <header class="navbar">
+            <div class="logo">
+                <i data-lucide="graduation-cap"></i>
+                <span>StudyFlow</span>
+            </div>
+            <nav>
+                <button class="nav-item active"><i data-lucide="home"></i> Início</button>
+                <button class="nav-item"><i data-lucide="calendar"></i> Calendário</button>
+                <button class="nav-item"><i data-lucide="book-open"></i> Matérias</button>
+                <button class="nav-item"><i data-lucide="timer"></i> Cronômetro</button>
+            </nav>
+        </header>
+
+        <section class="banner">
+            <div class="banner-content">
+                <p>✨ Bem-vindo ao StudyFlow</p>
+                <h1>Organize sua rotina de estudos</h1>
+                <p>Planeje seus estudos, acompanhe seu progresso e alcance seus objetivos.</p>
+            </div>
+        </section>
+
+        <section class="stats-grid">
+            <div class="stat-card">
+                <i data-lucide="book" class="blue"></i>
+                <h2>5</h2>
+                <p>Matérias</p>
+            </div>
+            <div class="stat-card">
+                <i data-lucide="check-circle" class="green"></i>
+                <h2>1/3</h2>
+                <p>Tarefas Hoje</p>
+            </div>
+            <div class="stat-card">
+                <i data-lucide="clock" class="purple"></i>
+                <h2>0min</h2>
+                <p>Tempo Total</p>
+            </div>
+            <div class="stat-card">
+                <i data-lucide="flame" class="orange"></i>
+                <h2>1/5</h2>
+                <p>Concluídas</p>
+            </div>
+        </section>
+
+        <div class="bottom-content">
+            <div class="tasks-section">
+                <div class="section-header">
+                    <h3>Tarefas de Hoje</h3>
+                    <a href="#">Ver calendário →</a>
+                </div>
+                <div class="task-list" id="taskList">
+                    </div>
+            </div>
+
+            <div class="menu-cards">
+                <div class="menu-item">
+                    <div class="icon-box purple"><i data-lucide="calendar"></i></div>
+                    <div class="menu-info">
+                        <h4>Calendário</h4>
+                        <p>Organize seus estudos</p>
+                    </div>
+                    <i data-lucide="chevron-right"></i>
+                </div>
+                <div class="menu-item">
+                    <div class="icon-box green"><i data-lucide="book-open"></i></div>
+                    <div class="menu-info">
+                        <h4>Matérias</h4>
+                        <p>Gerencie suas matérias</p>
+                    </div>
+                    <i data-lucide="chevron-right"></i>
+                </div>
+                <div class="menu-item">
+                    <div class="icon-box orange"><i data-lucide="timer"></i></div>
+                    <div class="menu-info">
+                        <h4>Cronômetro</h4>
+                        <p>Sessões de foco</p>
+                    </div>
+                    <i data-lucide="chevron-right"></i>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <script src="script.js"></script>
+</body>
+</html>
