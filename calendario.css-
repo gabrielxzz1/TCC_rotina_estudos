@@ -1,0 +1,148 @@
+:root {
+    --primary-color: #6c5ce7;
+    --bg-color: #f8f9fe;
+    --text-main: #2d3436;
+    --text-light: #636e72;
+    --white: #ffffff;
+}
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Segoe UI', sans-serif;
+}
+
+body {
+    background-color: var(--bg-color);
+    color: var(--text-main);
+}
+
+/* Navbar */
+.navbar {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 1rem 5%;
+    background: var(--white);
+    box-shadow: 0 2px 10px rgba(0,0,0,0.05);
+}
+
+.logo {
+    font-weight: bold;
+    color: var(--primary-color);
+    font-size: 1.2rem;
+}
+
+.navbar ul {
+    display: flex;
+    list-style: none;
+    gap: 20px;
+}
+
+.navbar a {
+    text-decoration: none;
+    color: var(--text-light);
+    font-weight: 500;
+}
+
+.navbar li.active a {
+    color: var(--primary-color);
+    background: #efedff;
+    padding: 8px 15px;
+    border-radius: 8px;
+}
+
+/* Layout Principal */
+.container {
+    padding: 2rem 5%;
+}
+
+.calendar-header {
+    display: flex;
+    justify-content: space-between;
+    align-items: flex-end;
+    margin-bottom: 2rem;
+}
+
+.calendar-header h1 { font-size: 1.8rem; }
+.calendar-header p { color: var(--text-light); }
+
+.main-content {
+    display: grid;
+    grid-template-columns: 2fr 1fr;
+    gap: 30px;
+}
+
+/* Grid do Calendário */
+.calendar-card {
+    background: var(--white);
+    padding: 2rem;
+    border-radius: 20px;
+    box-shadow: 0 10px 30px rgba(0,0,0,0.02);
+}
+
+.days-grid {
+    display: grid;
+    grid-template-columns: repeat(7, 1fr);
+    gap: 10px;
+}
+
+.weekday {
+    text-align: center;
+    color: var(--text-light);
+    font-weight: bold;
+    padding-bottom: 15px;
+}
+
+.day {
+    min-height: 100px;
+    padding: 10px;
+    border-radius: 12px;
+    font-weight: 500;
+}
+
+.active-day {
+    border: 2px solid var(--primary-color);
+    background: #fdfdff;
+}
+
+/* Estilo das Tarefas (Tags) */
+.task {
+    font-size: 0.7rem;
+    padding: 4px 8px;
+    margin-top: 5px;
+    border-radius: 6px;
+    white-space: nowrap;
+    overflow: hidden;
+    text-overflow: ellipsis;
+}
+
+.blue { background: #e0e7ff; color: #4338ca; }
+.red { background: #fee2e2; color: #b91c1c; }
+.green { background: #dcfce7; color: #15803d; }
+.orange { background: #ffedd5; color: #9a3412; }
+.purple { background: #f3e8ff; color: #7e22ce; }
+
+/* Sidebar */
+.details-sidebar {
+    background: var(--white);
+    border-radius: 20px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+    height: fit-content;
+    padding: 4rem 2rem;
+}
+
+.empty-state { color: var(--text-light); }
+.back-btn {
+    background: #efedff;
+    color: var(--primary-color);
+    width: 40px;
+    height: 40px;
+    line-height: 40px;
+    border-radius: 10px;
+    margin: 0 auto 1rem;
+}
