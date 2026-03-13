@@ -1,0 +1,72 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>StudyFlow - Cronômetro</title>
+    <link rel="stylesheet" href="calendario.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css">
+</head>
+<body>
+
+    <header class="navbar">
+        <div class="logo">
+            <i class="fas fa-graduation-cap"></i>
+            <span>StudyFlow</span>
+        </div>
+        <nav>
+            <a href="#"><i class="fas fa-home"></i> Início</a>
+            <a href="#"><i class="far fa-calendar-alt"></i> Calendário</a>
+            <a href="#"><i class="fas fa-book"></i> Matérias</a>
+            <a href="#" class="active"><i class="far fa-clock"></i> Cronômetro</a>
+        </nav>
+    </header>
+
+    <main class="container">
+        <section class="timer-header">
+            <h1>Cronômetro</h1>
+        </section>
+
+        <div class="content-wrapper">
+            <div class="timer-card">
+                <div class="timer-modes">
+                    <button class="mode-btn active"><i class="fas fa-brain"></i> Foco</button>
+                    <button class="mode-btn"><i class="fas fa-coffee"></i> Pausa Curta</button>
+                    <button class="mode-btn"><i class="fas fa-mug-hot"></i> Pausa Longa</button>
+                </div>
+
+                <div class="timer-display">
+                    <div class="circle">
+                        <span class="time">00:00</span>
+                        <span class="label">Foco</span>
+                    </div>
+                </div>
+
+                <div class="timer-controls">
+                    <select class="subject-select">
+                        <option value="">Selecionar matéria (opcional)</option>
+                        <option value="matematica">Matemática</option>
+                        <option value="historia">História</option>
+                    </select>
+                    
+                    <div class="action-buttons">
+                        <button class="btn-reset"><i class="fas fa-undo"></i></button>
+                        <button class="btn-start"><i class="fas fa-play"></i></button>
+                    </div>
+                </div>
+            </div>
+
+            <aside class="tips-card">
+                <h3><i class="far fa-lightbulb"></i> Dica Pomodoro</h3>
+                <ul>
+                    <li>25 min de foco → 5 min de pausa</li>
+                    <li>A cada 4 ciclos → pausa longa de 15 min</li>
+                    <li>Evite distrações durante o foco</li>
+                    <li>Registre suas sessões para acompanhar</li>
+                </ul>
+            </aside>
+        </div>
+    </main>
+
+</body>
+</html>
