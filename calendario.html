@@ -1,17 +1,19 @@
 <!DOCTYPE html>
 <html lang="pt-br">
 <head>
+      <!-- refazer pagina de acordo com a da base44 -->
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>StudyFlow - Calendário</title>
     <link rel="stylesheet" href="calendario.css">
     </head>
 <body>
-
+     <!-- header -->
     <header class="navbar">
         <div class="logo">
             <span class="logo-icon">🎓</span> StudyFlow
         </div>
+        <!-- nav responsavel pela caixa de de navegação no canto superior direito, deve estar com a escrita correta e hrefs funcionais -->
          <nav>
                 
                 <a href="home.html" class="nav-item active"><i data-lucide="home"></i> Inícao</a>
@@ -20,30 +22,35 @@
                 <a href="cronometro.html" class="nav-item"><i data-lucide="timer"></i> Cronômetro</a>
             </nav>
     </header>
-
+    <!-- main responsavel pela parte abaixo do header -->
     <main class="container">
+        <!-- espaço entre header e calendario ( mudar fontes) -->
         <section class="calendar-header">
             <div>
                 <h1>Calendário</h1>
                 <p>Organize suas tarefas de estudo</p>
             </div>
+             <!-- botão para trocar de mês, (adcionar funções) -->
             <div class="calendar-navigation">
                 <span>&lt;</span>
                 <strong>Março 2026</strong>
                 <span>&gt;</span>
             </div>
         </section>
-
+           <!-- div do calendario, temos que fazer o calendario inteiro do zero provavelmente  -->
         <div class="main-content">
             <div class="calendar-card">
+                <!-- calendario dias da semana -->
                 <div class="days-grid">
                     <div class="weekday">Dom</div><div class="weekday">Seg</div><div class="weekday">Ter</div>
                     <div class="weekday">Qua</div><div class="weekday">Qui</div><div class="weekday">Sex</div><div class="weekday">Sáb</div>
-                    
+
+                    <!-- calendario dias numerais -->
                     <div class="day">1</div><div class="day">2</div><div class="day">3</div>
                     <div class="day">4</div><div class="day">5</div><div class="day">6</div><div class="day">7</div>
                     <div class="day">8</div><div class="day">9</div>
-                    
+
+                    <!-- atividades do dia -->
                     <div class="day active-day">
                         <span class="day-number">10</span>
                         <div class="task blue">Equações de...</div>
@@ -51,6 +58,7 @@
                         <div class="task green">Células eucari...</div>
                     </div>
 
+                    <!-- atividades  -->
                     <div class="day">
                         <span class="day-number">11</span>
                         <div class="task orange">Análise sintáti...</div>
