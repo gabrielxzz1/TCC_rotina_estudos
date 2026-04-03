@@ -14,14 +14,16 @@
                 <i data-lucide="graduation-cap"></i>
                 <span>StudyFlow</span>
             </div>
+            <!-- nav responsavel pela caixa de de navegação no canto superior direito, deve estar com a escrita correta e hrefs funcionais */  -->
             <nav>
-                <button class="nav-item active"><i data-lucide="home"></i> Início</button>
-                <button class="nav-item"><i data-lucide="calendar"></i> Calendário</button>
-                <button class="nav-item"><i data-lucide="book-open"></i> Matérias</button>
-                <button class="nav-item"><i data-lucide="timer"></i> Cronômetro</button>
+                
+                <a href="home.html" class="nav-item active"><i data-lucide="home"></i> Inícao</a>
+                <a href="calendario.html" class="nav-item"><i data-lucide="calendar"></i> Calendário</a>
+                <a href="materias.html" class="nav-item"><i data-lucide="book-open"></i> Matérias</a>
+                <a href="cronometro.html" class="nav-item"><i data-lucide="timer"></i> Cronômetro</a>
             </nav>
         </header>
-
+        <!-- banner -->
         <section class="banner">
             <div class="banner-content">
                 <p>✨ Bem-vindo ao StudyFlow</p>
@@ -29,7 +31,7 @@
                 <p>Planeje seus estudos, acompanhe seu progresso e alcance seus objetivos.</p>
             </div>
         </section>
-
+    <!-- caixas abaixo do header "estatisticas" -->
         <section class="stats-grid">
             <div class="stat-card">
                 <i data-lucide="book" class="blue"></i>
@@ -52,7 +54,7 @@
                 <p>Concluídas</p>
             </div>
         </section>
-
+<!-- essa caixa devera ser interligada com a pagina calendario -->
         <div class="bottom-content">
             <div class="tasks-section">
                 <div class="section-header">
@@ -62,8 +64,10 @@
                 <div class="task-list" id="taskList">
                     </div>
             </div>
+ <!-- caixas ao lado do calendario, deve ser colocado os hrefs também -->
+           <div class="menu-cards">
 
-            <div class="menu-cards">
+                 <!--div calendario  -->
                 <div class="menu-item">
                     <div class="icon-box purple"><i data-lucide="calendar"></i></div>
                     <div class="menu-info">
@@ -72,6 +76,8 @@
                     </div>
                     <i data-lucide="chevron-right"></i>
                 </div>
+
+                <!-- div materias -->
                 <div class="menu-item">
                     <div class="icon-box green"><i data-lucide="book-open"></i></div>
                     <div class="menu-info">
@@ -80,6 +86,8 @@
                     </div>
                     <i data-lucide="chevron-right"></i>
                 </div>
+
+                <!-- div cronometro -->
                 <div class="menu-item">
                     <div class="icon-box orange"><i data-lucide="timer"></i></div>
                     <div class="menu-info">
@@ -88,10 +96,11 @@
                     </div>
                     <i data-lucide="chevron-right"></i>
                 </div>
+                
             </div>
         </div>
     </div>
-
+ <!-- aqui sera chamado o java script -->
     <script src="script.js"></script>
 </body>
 </html>
